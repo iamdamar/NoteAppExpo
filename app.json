@@ -1,13 +1,14 @@
 {
   "expo": {
-    "name": "NoteAppExpo",
-    "slug": "NoteAppExpo",
+    "name": "Note App Expo",
+    "slug": "note-app-expo",
+    "description": "This is a note app.",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/note-app-icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/note-app-splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -18,10 +19,18 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.damarwu.noteappexpo"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "output": "server",
+      "bundler": "metro"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "45d35132-a255-4282-ac82-f747c961c31b"
+      }
     }
   }
 }
